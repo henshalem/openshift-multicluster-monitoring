@@ -20,7 +20,7 @@ spec:
             - query
             - --grpc-address=0.0.0.0:10901
             - --http-address=0.0.0.0:9090
-            - --store=thanos-receiver.multicluster-monitoring.svc:10907
+            - --store=thanos-receive-default.multicluster-monitoring.svc.cluster.local:10901
             - --store=thanos-store.multicluster-monitoring.svc:10901
           image: quay.io/thanos/thanos:v0.26.0
           ports:
