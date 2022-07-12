@@ -1,0 +1,15 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: hashring-config
+data:
+  hashrings.json: |
+    [
+      {
+        "hashring": "soft-tenants",
+        "endpoints": [
+          "thanos-receive-default-0.thanos-receive-default.multicluster-monitoring.svc.cluster.local:10901",
+          "thanos-receive-default-1.thanos-receive-default.multicluster-monitoring.svc.cluster.local:10901"
+        ]
+      }
+    ]
