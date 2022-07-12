@@ -30,7 +30,7 @@ data:
       logLevel: ""
       nodeSelector: null
       remoteWrite:
-      - url: "http://thanos-receiver.multicluster-monitoring.svc:10908/api/v1/receive"
+      - url: "http://thanos-receive-default.multicluster-monitoring.svc:19291/api/v1/receive"
         writeRelabelConfigs:
         - regex: 'prometheus_replica'
           action: 'labeldrop'
